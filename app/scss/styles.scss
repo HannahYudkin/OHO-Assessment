@@ -1,12 +1,69 @@
 
-$theme-colors: (
-  "primary": #FF69B4
-  );
+// $theme-colors: (
+//   "primary": #FF69B4
+//   );
   
 @import "node_modules/bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap');
+
+$cormorant-garamond: 'Cormorant Garamond', serif;
+
+.container {
+  object-fit: cover;
+  object-position: center;
+  max-width: "100%";
+  overflow:hide;
+  padding: 0;
+  margin: auto;
+  position: relative;
+
+  .container__image {
+    height: 400px;
+  }
+
+  .container__image2 {
+    height: 160px;
+  }
+
+  .container__paragraph {
+    font-family: $cormorant-garamond;
+  }
+  
+  .container__icon{
+    left: 90%;
+    // bottom: 460px;
+    bottom: 80%;
+    font-size: 35px;
+  }
+}
+
+.carousel-caption {
+  left: 7%;
+  bottom: 100px;
+}
+
+
+
 
 body {
   color: white;
   background: rgb(92,18,18);
-  height: 400vh;
 }
+
+
+
+
+#content-desktop {display: block;}
+#content-mobile {display: none;}
+
+
+@media screen and (max-width: 768px) {
+
+  #content-desktop {display: none;}
+  #content-mobile {display: block;}
+
+  .container__paragraph--hidden {
+    display: none;
+  }
+  
+  }
