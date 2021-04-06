@@ -7187,7 +7187,7 @@ a.text-dark:hover, a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6; } }
 
-h1 {
+h3 {
   font-family: "Open Sans Condensed", sans-serif;
   font-weight: 600;
   color: #D21533; }
@@ -7197,6 +7197,11 @@ h2 {
   font-weight: 600;
   color: #222222; }
 
+body {
+  height: 20px;
+  background-image: linear-gradient(to top, rgba(255, 255, 255, 0.464), #d6d1d1);
+  background-repeat: no-repeat; }
+
 .container {
   object-fit: cover;
   object-position: center;
@@ -7204,9 +7209,25 @@ h2 {
   overflow: hide;
   padding: 0;
   margin: auto;
-  position: relative; }
+  position: relative;
+  /* 
+    #002f4b,#dc4225 
+    Convert HEX to RGBA - http://hex2rgba.devoth.com/
+    */ }
   .container .container__image {
     height: 400px; }
+  .container .container__image--gradient-overlay {
+    position: relative;
+    display: inline-block; }
+  .container .container__image--gradient-overlay:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    background: linear-gradient(to right top, black, rgba(255, 255, 255, 0)); }
   .container .container__image2 {
     height: 160px; }
   .container .container__title {
@@ -7233,6 +7254,10 @@ h2 {
     color: #D21533; }
   .container .container__icon--gray {
     color: #222222; }
+  .container .container__icon--white {
+    color: white; }
+  .container .container__icon--hidden {
+    display: none; }
   .container .container__subtitle {
     font-family: "Open Sans Condensed", sans-serif;
     color: #D21533;
@@ -7246,8 +7271,8 @@ h2 {
   left: 7%;
   bottom: 25%; }
 
-body {
-  background: gray; }
+.test {
+  background-image: url("./assets/puppy-corgi.jpg"); }
 
 @media screen and (max-width: 768px) {
   h1 {
@@ -7279,9 +7304,13 @@ body {
       top: -115%;
       left: -230px;
       font-size: 24px; }
+    .container .container__icon--hidden {
+      display: block;
+      position: absolute;
+      left: 95px;
+      top: 20px;
+      color: white; }
     .container .container__paragraph--desktop--hidden {
       display: block; }
-    .container .container__heading--margin--top {
-      margin-top: 10px; }
     .container .container__headding--margin--bottom {
-      padding-top: 20px; } }
+      padding-top: 15px; } }

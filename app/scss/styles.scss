@@ -9,7 +9,7 @@
 $cormorant-garamond: 'Cormorant Garamond', serif;
 $open-sans-condensed: 'Open Sans Condensed', sans-serif;
 
-h1 {
+h3 {
   font-family: $open-sans-condensed;
   font-weight: 600;
   color: #D21533;
@@ -21,6 +21,11 @@ h2 {
   color: #222222;
 }
 
+body {
+  height: 20px;    
+  background-image: linear-gradient(to top, rgba(255, 255, 255, 0.464), rgb(214, 209, 209));
+  background-repeat: no-repeat;
+}
 
 .container {
   object-fit: cover;
@@ -33,6 +38,27 @@ h2 {
 
   .container__image {
     height: 400px;
+  }
+
+  .container__image--gradient-overlay {
+      position:relative;
+      display:inline-block;
+    }
+    
+  .container__image--gradient-overlay:after {
+    content:'';
+    position:absolute;
+    left:0; 
+    top:0;
+    width:100%; 
+    height:100%;
+    display:inline-block;
+    background: -moz-linear-gradient(to right top, rgb(0, 0, 0, .75), rgba(255, 255, 255, 0));
+    background: -webkitlinear-gradient(to right top, rgb(0, 0, 0, .75), rgba(255, 255, 255, 0));
+    background: -webkitlinear-gradient(to right top, rgb(0, 0, 0, .75), rgba(255, 255, 255, 0));
+    background: -o-linear-gradient(to right top, rgb(0, 0, 0, .75), rgba(255, 255, 255, 0));
+    background: -ms-linear-gradient(to right top, rgb(0, 0, 0, .75), rgba(255, 255, 255, 0));
+    background: linear-gradient(to right top, rgb(0, 0, 0, .75), rgba(255, 255, 255, 0));
   }
 
   .container__image2 {
@@ -70,11 +96,19 @@ h2 {
   }
 
   .container__icon--red {
-    color: #D21533;;
+    color: #D21533;
   }
 
   .container__icon--gray {
     color:#222222;
+  }
+
+  .container__icon--white {
+    color: white;
+  }
+
+  .container__icon--hidden {
+    display: none;
   }
 
   .container__subtitle {
@@ -98,16 +132,9 @@ h2 {
 }
 
 
-
-
-body {
-  // height: 20px;    
-  // background-image: linear-gradient(to top, rgba(255, 255, 255, 0.464), rgb(214, 209, 209));
-  // background-repeat: no-repeat;
-  background: gray;
+.test {
+  background-image: url("./assets/puppy-corgi.jpg");
 }
-
-
 
 
 
@@ -169,17 +196,22 @@ body {
       left: -230px;
       font-size: 24px;
     }
+
+    .container__icon--hidden {
+      display: block;
+      position: absolute;
+      left: 95px;
+      top: 20px;
+      color: white;
+    }
     
     .container__paragraph--desktop--hidden {
       display: block;
     }
-    
-    .container__heading--margin--top {
-      margin-top: 10px;
-    }
 
     .container__headding--margin--bottom {
-      padding-top: 20px;    
+      padding-top: 15px;    
     }
   }
 }
+
