@@ -7,21 +7,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
   <script src="https://use.fontawesome.com/313ca7924a.js" rel=“stylesheet></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 </head>
 <body>
 
 
+
+
   <div class="container overflow-hidden">
     <br>
-    <span class="container__title">THE LATEST  </span><span class="container__line">______</span>
+    <h2 class="container__title">THE LATEST  <span class="container__line">______</span> </h2>
     <div class='row mt-4'>
       <div class='col-sm-12 col-md-8 carousel slide'>
-        <img src="./assets/puppy-corgi.jpg" alt="Main Puppy" class="container container__image carousel-item active">
+        <a data-fancybox href="https://www.youtube.com/embed/dQw4w9WgXcQ">
+          <img src="./assets/puppy-corgi.jpg" alt="Main Puppy" class="container container__image carousel-item active"/>
+        </a>
         <div class="carousel-caption text-left d-none d-md-block">
           <span class="fa fa-folder"></span><span class="container__subtitle container__title--white"> CATEGORY</span>
           <br>
-          <span class="h1 container__title--white">News or Story Title  </span><span class="fa fa-arrow-right container__icon--large container__icon--red"></span>
+          <span class="h3 container__title--white">News or Story Title  </span><span class="fa fa-arrow-right container__icon--large container__icon--red"></span>
           <p class="container__paragraph">
             Doggo ipsum aqua doggo you are doing me the shock. You are doing me a frighten ruff he made many woofs wrinkler heckin, adorable doggo very taste wow ruff. Such treat shooberino pats pupperino shibe, wow very biscit porgo.
           </p>
@@ -30,46 +38,51 @@
           <i class="fa fa-play-circle"></i>
         </div>
         <div class="container__paragraph--desktop--hidden">
-          <h1 class='container__title'>News or Story Title<span class="fa fa-arrow-right container__icon--large container__icon--red"></span> </h1>
+          <span class="fa fa-folder pl-3"></span><span class="container__subtitle container__subtitle">  CATEGORY</span>
+          <br>
+          <h3 class='container__title pl-2'>News or Story Title<span class="fa fa-arrow-right container__icon--large container__icon--red"></span> </h3>
           <p class="container__paragraph pl-3">
             Doggo ipsum aqua doggo you are doing me the shock. You are doing me a frighten ruff he made many woofs wrinkler heckin, adorable doggo very taste wow ruff. Such treat shooberino pats pupperino shibe, wow very biscit porgo.
           </p>
         </div>
       </div>
 
-      <div class="col-sm-12 col-md-4">
-          <img src="./assets/corgi-butt.jpg" alt="Butt Corgi" class="container container__image2">
-          <div class="container__heading--margin--top">
-            <span class="fa fa-folder"></span> <span class="container__subtitle"> CATEGORY</span>
-            <h1>News/Content Title 1<span class="fa fa-arrow-right container__icon--large container__icon--gray container__headding--margin--bottom"></span> </h1>
-          </div>
-          <p class="container__paragraph container__paragraph--hidden">
-            Doggo ipsum aqua doggo you are doing me the shock. You are doing me a frighten ruff he made many woofs wrinkler heckin, adorable doggo very taste wow ruff. Such treat shooberino pats pupperino shibe, wow very biscit porgo. Yapper h*ck fluffer very taste wow doing me a frighten heckin waggy wags, many pats floofs super chub aqua doggo. 
-          </p>
+    <div class="col-sm-12 col-md-4">
+      <img src="./assets/corgi-butt.jpg" alt="Butt Corgi" class="container container__image2">
+      <div class="container__heading--margin--top">
+        <span class="fa fa-folder mt-3"></span> <span class="container__subtitle"> CATEGORY</span>
+        <h3>News/Content Title 1<span class="fa fa-arrow-right container__icon--large container__icon--gray container__headding--margin--bottom"></span> </h3>
+      </div>
+        <p class="container__paragraph container__paragraph--hidden">
+          Doggo ipsum aqua doggo you are doing me the shock. You are doing me a frighten ruff he made many woofs wrinkler heckin, adorable doggo very taste wow ruff. Such treat shooberino pats pupperino shibe, wow very biscit porgo. Yapper h*ck fluffer very taste wow doing me a frighten heckin waggy wags, many pats floofs super chub aqua doggo. 
+        </p>
       </div>
     </div>
 
 
     <div class='row'>
       <div class='col-sm-12 col-md-4'>
-        <img src="./assets/taco-corgi.jpg" alt="Taco Corgi" class="container container__image2 carousel-item active">
-        <div class="carousel-caption container__icon--small text-right">
+        <a data-fancybox href="https://www.youtube.com/embed/dQw4w9WgXcQ">
+          <img src="./assets/taco-corgi.jpg" alt="Taco Corgi" class="container container__image2 carousel-item active">
+        </a>
+        <div class="carousel-caption container__icon--small text-right d-none d-md-block">
           <i class="fa fa-play-circle"></i>
         </div>
         <div class="container__heading--margin--top">
-          <span class="fa fa-folder"></span> <span class="container__subtitle"> CATEGORY</span>
-          <h1>News/Content Title 2 <span class="fa fa-arrow-right container__icon--large container__icon--gray container__headding--margin--bottom"></span> </h1>
+          <span class="fa fa-folder mt-3"></span> <span class="container__subtitle"> CATEGORY</span>
+          <h3>News/Content Title 2 <span class="fa fa-arrow-right container__icon--large container__icon--gray container__headding--margin--bottom"></span> </h3>
         </div>
         <p class="container__paragraph container__paragraph--hidden">
           Doggo ipsum aqua doggo you are doing me the shock. You are doing me a frighten ruff he made many woofs wrinkler heckin, adorable doggo very taste wow ruff. Such treat shooberino pats pupperino shibe, wow very biscit porgo. Yapper h*ck fluffer very taste wow doing me a frighten heckin waggy wags, many pats floofs super chub aqua doggo. 
         </p>
+        <i class="fa fa-play-circle container__icon--hidden"></i>
       </div>
 
     <div class='col-sm-12 col-md-4'>
       <img src="./assets/derpy-corgi.png" alt="Derpy Corgi" class="container container__image2">
       <div class="container__heading--margin--top">
-        <span class="fa fa-folder"></span> <span class="container__subtitle"> CATEGORY</span>
-        <h1>News/Content Title 3<span class="fa fa-arrow-right container__icon--large container__icon--gray container__headding--margin--bottom"></span> </h1>
+        <span class="fa fa-folder mt-3"></span> <span class="container__subtitle"> CATEGORY</span>
+        <h3>News/Content Title 3<span class="fa fa-arrow-right container__icon--large container__icon--gray container__headding--margin--bottom"></span> </h3>
       </div>
       <p class="container__paragraph container__paragraph--hidden">
         Doggo ipsum aqua doggo you are doing me the shock. You are doing me a frighten ruff he made many woofs wrinkler heckin, adorable doggo very taste wow ruff. Such treat shooberino pats pupperino shibe, wow very biscit porgo. Yapper h*ck fluffer very taste wow doing me a frighten heckin waggy wags, many pats floofs super chub aqua doggo. 
@@ -77,40 +90,21 @@
     </div>
 
     <div class='col-sm-12 col-md-4'>
-      <img src="./assets/Corgi-at-home.jpg" alt="Home Corgi" class="container container__image2 carousel-item active">
-      <div class="carousel-caption container__icon--small text-right">
+      <a data-fancybox href="https://www.youtube.com/embed/dQw4w9WgXcQ">
+        <img src="./assets/Corgi-at-home.jpg" alt="Home Corgi" class="container container__image2 carousel-item active">
+      </a>
+      <div class="carousel-caption container__icon--small text-right d-none d-md-block">
         <i class="fa fa-play-circle"></i>
       </div>
       <div class="container__heading--margin--top">
-        <span class="fa fa-folder"></span> <span class="container__subtitle"> CATEGORY</span>
-        <h1>News/Content Title 4<span class="fa fa-arrow-right container__icon--large container__icon--gray container__headding--margin--bottom"></span> </h1>
+        <span class="fa fa-folder mt-3"></span> <span class="container__subtitle"> CATEGORY</span>
+        <h3>News/Content Title 4<span class="fa fa-arrow-right container__icon--large container__icon--gray container__headding--margin--bottom"></span> </h3>
       </div>
       <p class="container__paragraph container__paragraph--hidden">
         Doggo ipsum aqua doggo you are doing me the shock. You are doing me a frighten ruff he made many woofs wrinkler heckin, adorable doggo very taste wow ruff. Such treat shooberino pats pupperino shibe, wow very biscit porgo. Yapper h*ck fluffer very taste wow doing me a frighten heckin waggy wags, many pats floofs super chub aqua doggo. 
       </p>
+      <i class="fa fa-play-circle container__icon--hidden"></i>
     </div>
-
-
-
-    <!-- <iframe poster="./assets/puppy-corgi.jpg"
-    src="https://www.youtube.com/embed/tgbNymZ7vqY">
-    </iframe>
-
-    <iframe src="https://youtu.be/dQw4w9WgXcQ" poster="./assets/puppy-corgi.jpg"></iframe> -->
-
-
-    <!-- <div class="test">
-      <iframe poster="./assets/puppy-corgi.jpg" id = "rick" width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
-    </div>
-
-
-
-
-
-    <section class="video">
-      <img src="./assets/puppy-corgi.jpg" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Play Video" class="video__placeholder" />
-      <button class="video__button"></button>
-    </section> -->
   </div>
 </body>
 
