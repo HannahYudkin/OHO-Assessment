@@ -5,7 +5,7 @@ This is a replication of a desktop/web application to demonstrate responsive web
 
 ## Built With
 
-* [HTML]
+* HTML
 * [Gulp](https://www.npmjs.com/package/gulp)
 * [SCSS](https://sass-lang.com/)
 * [BrowserSync](https://www.npmjs.com/package/browser-sync)
@@ -13,7 +13,7 @@ This is a replication of a desktop/web application to demonstrate responsive web
 
 ## Preview
 
-<img src="https://github.com/HannahYudkin/OHO-Assessment/app/assets/Desktop.png">
+<img src="https://github.com/HannahYudkin/OHO-Assessment/blob/main/app/assets/Desktop.png">
 
 ## Got Questions? 
 ### Ask Me:
