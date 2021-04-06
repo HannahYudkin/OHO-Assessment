@@ -7202,6 +7202,31 @@ body {
   background-image: linear-gradient(to top, rgba(255, 255, 255, 0.464), #d6d1d1);
   background-repeat: no-repeat; }
 
+a {
+  background-color: transparent;
+  text-decoration: none; }
+
+a:link {
+  color: white; }
+
+a:visited {
+  color: white; }
+
+a:hover {
+  color: #b9b6b6; }
+
+a.containter__hyperlink--red:link {
+  color: #D21533; }
+
+a.containter__hyperlink--red:visited {
+  color: #D21533; }
+
+a.containter__hyperlink--red:active {
+  color: #D21533; }
+
+a.containter__hyperlink--red:hover {
+  color: #860d22; }
+
 .container {
   object-fit: cover;
   object-position: center;
