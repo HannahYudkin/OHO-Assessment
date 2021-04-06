@@ -4,7 +4,7 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
-@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Open+Sans+Condensed:wght@300&display=swap");
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -7187,6 +7187,16 @@ a.text-dark:hover, a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6; } }
 
+h1 {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: 600;
+  color: #D21533; }
+
+h2 {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: 600;
+  color: #222222; }
+
 .container {
   object-fit: cover;
   object-position: center;
@@ -7199,31 +7209,79 @@ a.text-dark:hover, a.text-dark:focus {
     height: 400px; }
   .container .container__image2 {
     height: 160px; }
+  .container .container__title {
+    font-family: "Open Sans Condensed", sans-serif;
+    font-weight: 600;
+    font-size: 25px; }
+  .container .container__line {
+    font-family: "Open Sans Condensed", sans-serif;
+    font-weight: 900;
+    color: #D21533; }
   .container .container__paragraph {
     font-family: "Cormorant Garamond", serif; }
   .container .container__icon {
     left: 90%;
     bottom: 80%;
     font-size: 35px; }
+  .container .container__icon--small {
+    left: 85%;
+    bottom: 83%;
+    font-size: 35px; }
+  .container .container__icon--large {
+    font-size: 30px; }
+  .container .container__icon--red {
+    color: #D21533; }
+  .container .container__icon--gray {
+    color: #222222; }
+  .container .container__subtitle {
+    font-family: "Open Sans Condensed", sans-serif;
+    color: #D21533;
+    font-weight: 900; }
+  .container .container__title--white {
+    color: white; }
+  .container .container__paragraph--desktop--hidden {
+    display: none; }
 
 .carousel-caption {
   left: 7%;
-  bottom: 100px; }
+  bottom: 25%; }
 
 body {
-  color: white;
-  background: #5c1212; }
-
-#content-desktop {
-  display: block; }
-
-#content-mobile {
-  display: none; }
+  background: gray; }
 
 @media screen and (max-width: 768px) {
-  #content-desktop {
-    display: none; }
-  #content-mobile {
-    display: block; }
-  .container__paragraph--hidden {
-    display: none; } }
+  h1 {
+    font-size: 18px;
+    font-weight: 600; }
+  .container {
+    padding: 13px; }
+    .container .container__title {
+      font-size: 30px;
+      margin-left: 10px; }
+    .container .container__image {
+      height: 300px; }
+    .container .container__image2 {
+      width: 33.3333%;
+      height: 90px;
+      display: block;
+      float: left; }
+    .container .container__icon--large {
+      font-size: 18px; }
+    .container .container__subtitle {
+      font-size: 12px; }
+    .container .container__paragraph--hidden {
+      display: none; }
+    .container .container__icon {
+      left: 80%;
+      bottom: 80%; }
+    .container .container__icon--small {
+      position: absolute;
+      top: -115%;
+      left: -230px;
+      font-size: 24px; }
+    .container .container__paragraph--desktop--hidden {
+      display: block; }
+    .container .container__heading--margin--top {
+      margin-top: 10px; }
+    .container .container__headding--margin--bottom {
+      padding-top: 20px; } }
